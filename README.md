@@ -1,6 +1,6 @@
 # cyberdog_sim
 
-小米铁蛋仿真
+小米铁蛋仿真。
 
 ## 环境
 
@@ -66,33 +66,33 @@ sudo ./devel/lib/unitree_guide/junior_ctrl
 
 ### 在有ROS环境的主机中运行代码
 
+修改`src/unitree_guide/unitree_guide/CMakeLists.txt`中的下述宏定义
+
 ```cmake
-set(ROBOT_TYPE CYBERDOG)
-set(PLATFORM amd64)
 set(CATKIN_MAKE ON)
 set(SIMULATION OFF)
 set(REAL_ROBOT ON)
 ```
 
-直接用sudo权限运行junior_ctrl，操作见上文
+单独编译`unitree_guide`包
 
-### 在运控板中运行控制代码
+```bash
+catkin_make -DCATKIN_WHITELIST_PACKAGES="unitree_guide”
+```
 
-#### 准备
+用sudo权限运行`junior_ctrl`，操作与上文**gazebo仿真**中运行`junior_ctrl`的步骤一样，不再赘述。
 
-修改`src/unitree_guide/unitree_guide/CMakeLists.txt`
+### 在运控板中编译代码
+
+修改`src/unitree_guide/unitree_guide/CMakeLists.txt`中的下述宏定义
 
 ```cmake
-set(ROBOT_TYPE CYBERDOG)
-set(PLATFORM amd64)
 set(CATKIN_MAKE OFF)
 set(SIMULATION OFF)
 set(REAL_ROBOT ON)
 ```
 
-#### 编译
-
-进入`src/unitree_guide/unitree_guide`目录下
+然后进入`src/unitree_guide/unitree_guide`目录下
 
 ```
 mkdir build && cd build
@@ -100,6 +100,8 @@ cmake ..
 make -j8
 ```
 
-可执行文件为`build/bin/junior_ctrl`，代码使用了实时进程，请使用sudo权限执行。
+用sudo权限运行`junior_ctrl`，路径为：`build/bin/junior_ctrl`
 
-交叉编译参见铁蛋官方文档
+### 交叉编译
+
+参见铁蛋官方文档
