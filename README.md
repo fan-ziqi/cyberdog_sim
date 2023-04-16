@@ -2,8 +2,6 @@
 
 小米铁蛋仿真。
 
-注意：后空翻是实验功能，请勿于真机测试。后空翻
-
 ## 环境
 
 * Ubuntu-18.04+ROS-Melodic
@@ -66,6 +64,8 @@ sudo ./devel/lib/unitree_guide/junior_ctrl
 注：步态默认为trot，更多步态需要在`src/unitree_guide/unitree_guide/src/main.cpp`中进行更改
 
 ## 控制实物
+
+注意：后空翻是实验功能，请勿于真机测试。步态还有问题，暂时不要测试。
 
 ### 在有ROS环境的主机中运行代码
 
