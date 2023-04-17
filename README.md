@@ -59,7 +59,7 @@ sudo ./devel/lib/unitree_guide/junior_ctrl
 * 按`1`进入阻尼模式（机器人关节进入阻尼状态，机器人会趴下）
 * 按`3`进入姿态控制模式（此时使用键盘的wasd、ijkl可以改变机器人的姿态）
 * 按`4`进入步态模式（此时使用键盘的wasd、jl可以控制机器人运动）
-* 按`7`进入后空翻模式（TODO 有很大概率程序会报错退出，暂时还没找到问题，重新运行几次就好了）
+* 按`7`进入后空翻模式
 
 注：步态默认为trot，更多步态需要在`src/unitree_guide/unitree_guide/src/main.cpp`中进行更改
 
