@@ -12,8 +12,7 @@
 ## 部署
 
 ```bash
-mkdir cyberdogsim_ws && cd cyberdogsim_ws
-mkdir src && cd src
+mkdir -p cyberdogsim_ws/src && cd cyberdogsim_ws/src
 git clone https://github.com/fan-ziqi/unitree_guide.git
 git clone https://github.com/fan-ziqi/unitree_ros.git
 cd ..
