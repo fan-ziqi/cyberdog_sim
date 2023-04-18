@@ -4,8 +4,8 @@
 
 ## 环境
 
-* Ubuntu-18.04+ROS-Melodic
-* Ubuntu-20.04+ROS-Noetic
+* Ubuntu-18.04+ROS-Melodic （未测试）
+* Ubuntu-20.04+ROS-Noetic （推荐）
 
 另外请确保环境中有gazebo，如遇依赖问题请根据编译输出自行修复。
 
