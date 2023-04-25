@@ -18,6 +18,13 @@ catkin build unitree_guide unitree_legged_msgs unitree_move_base cyberdog_descri
 source ./devel/setup.bash
 ```
 
+更新代码
+
+```bash
+git pull
+git submodule update --remote --recursive
+```
+
 ## 使用仿真
 
 ### rviz可视化
