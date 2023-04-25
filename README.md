@@ -12,11 +12,9 @@
 ## 部署
 
 ```bash
-mkdir -p cyberdogsim_ws/src && cd cyberdogsim_ws/src
-git clone https://github.com/fan-ziqi/unitree_guide.git
-git clone https://github.com/fan-ziqi/unitree_ros.git
-cd ..
-catkin_make -DCATKIN_WHITELIST_PACKAGES="unitree_guide;unitree_legged_msgs;unitree_move_base;cyberdog_description;unitree_gazebo;unitree_legged_control;"
+git clone --recursive https://github.com/fan-ziqi/cyberdog_sim.git
+cd cyberdogsim_ws
+catkin build unitree_guide unitree_legged_msgs unitree_move_base cyberdog_description unitree_gazebo unitree_legged_control
 source ./devel/setup.bash
 ```
 
