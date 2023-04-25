@@ -13,7 +13,7 @@
 
 ```bash
 git clone --recursive https://github.com/fan-ziqi/cyberdog_sim.git
-cd cyberdogsim_ws
+cd cyberdog_sim/cyberdogsim_ws
 catkin build unitree_guide unitree_legged_msgs unitree_move_base cyberdog_description unitree_gazebo unitree_legged_control
 source ./devel/setup.bash
 ```
