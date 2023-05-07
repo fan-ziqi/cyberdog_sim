@@ -14,7 +14,8 @@
 ```bash
 git clone --recursive https://github.com/fan-ziqi/cyberdog_sim.git
 cd cyberdog_sim/cyberdogsim_ws
-catkin build unitree_guide unitree_legged_msgs unitree_move_base cyberdog_description unitree_gazebo unitree_legged_control
+catkin build unitree_guide unitree_legged_msgs unitree_move_base cyberdog_description unitree_gazebo unitree_legged_control unitree_controller
+# 或者直接 catkin build 时间会长一些
 source ./devel/setup.bash
 ```
 
