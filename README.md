@@ -9,6 +9,21 @@
 
 另外请确保环境中有gazebo，如遇依赖问题请根据编译输出自行修复。
 
+## 依赖
+
+安装yaml-cpp
+
+```bash
+git clone https://github.com/jbeder/yaml-cpp.git
+cd yaml-cpp && mkdir build && cd build
+cmake -DYAML_BUILD_SHARED_LIBS=on ..
+sudo make
+sudo make install
+sudo ldconfig
+```
+
+头文件在/usr/local/include，库文件在/usr/local/lib
+
 ## 部署
 
 ```bash
