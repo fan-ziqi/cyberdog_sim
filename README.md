@@ -37,8 +37,7 @@ source ./devel/setup.bash
 更新代码
 
 ```bash
-git pull
-git submodule update --remote --recursive
+git pull --recurse-submodules
 ```
 
 ## 使用仿真
